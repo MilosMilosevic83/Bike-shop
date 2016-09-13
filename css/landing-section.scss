@@ -1,0 +1,50 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.landing-bg {
+      background:url(../img/landing-bg.jpg) no-repeat top center;
+  @include background_stretch;
+  padding:300px 0;
+  @include breakpoint(medium_screen1){
+     padding:150px 0;
+  }
+}
+
+.center-logo {
+  margin:0 auto;
+  display: block;
+}
+.main-headline {
+    text-align: left;
+    img {
+      max-width: 280px;
+    }
+    h1 {
+      font-weight:900;
+      font-size: 6.5em;
+      text-transform: uppercase;
+      line-height: 60px;
+      color: #fff;
+      margin:50px 0 0 0;
+      clear: both;
+      font-family: $font9;
+      color: #fff;
+      line-height: 80px;
+       @include breakpoint(medium_screen1){
+          font-size:8vw;
+          margin-top: 5%;
+          line-height:50px;
+          padding:20px 0;
+      }
+    }
+  }
+
+  .main-btn {
+      @include buttons;
+  }

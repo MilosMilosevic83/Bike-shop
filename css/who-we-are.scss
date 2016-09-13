@@ -1,0 +1,39 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+.who {
+ .inner-who {
+    margin-top: -100px;
+     @include breakpoint(medium_screen1){
+       margin-top: -50px;
+      }
+  }
+  h2 {
+    font-size: 7em;
+    font-weight: 100;
+    margin:0;
+    width: auto;
+    padding:40px;
+    color: #fff;
+    text-align: left;
+    font-family: $font1;
+     @include breakpoint(biggest_screen2){
+          font-size: 4em;
+          padding-left:20px;
+      }
+       @include breakpoint(medium_screen1){
+          font-size: 2em;
+      }
+    span {
+      background:#217AA2;
+      padding:20px 30px;
+    }
+  }
+}
+
+.clear {
+  width: 100%;
+  clear: both;
+}
+

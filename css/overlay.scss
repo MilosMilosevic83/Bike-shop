@@ -1,0 +1,88 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+.overlay {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+    a {
+      &:hover {
+        background:#311B1C;
+      }
+    }
+}
+
+.overlay{
+    a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block; 
+        transition: 0.3s;
+       font-family: $font3;
+       &:hover, &:focus {
+          color: #f1f1f1;
+       }
+     }
+  } 
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important; 
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+.menu-opener {
+  position:absolute;
+  top: 15px;
+  left:0;
+  width: 120px;
+  height: 70px;
+  overflow: hidden;
+  display:block;
+  cursor:pointer;
+  padding:15px;
+  @include breakpoint(medium_screen1){
+     
+  background:#217AA2;
+  left: 30px;
+  }
+  &:hover {
+    opacity: .9;
+  }
+  span {
+    width: 50px;
+    height: 4px;
+    margin:8px auto;
+    display: block;
+     background:#fff;
+     border:1px solid #925442;
+  }
+}

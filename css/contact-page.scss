@@ -1,0 +1,135 @@
+
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+.form-wrap {
+
+  h2 {
+      font-family: $font-main;
+      font-size: 1.9em;
+      text-align: center;
+      padding: 20px 0 80px 0!important;
+      color:rgb(16,19,28);
+      font-weight: 300;
+  }
+}
+.message-wrap {
+  padding:0 10px!important;
+}
+.form-group-wrap {
+  clear: both;
+  float:none !important;
+    @include breakpoint(medium_screen1){
+      width:100% !important;
+    }
+}
+.btn{
+  margin:30px auto!important;
+  @include breakpoint(medium_screen1){
+      float: none !important;
+      width:100% !important;
+    }
+   &:after {
+        content:" ";
+    }
+}
+.form-group {
+  color:rgb(14,16,28);
+  padding:0 !important;
+  width: 50%;
+  float: left;
+  padding-right:10px !important;
+  @include breakpoint(medium_screen1) {
+    width: 100%;
+    padding-right:0 !important;
+  }
+  label {
+    font-family: $font-main;
+    color: rgb(14,16,28);
+    font-size: 1em;
+  }
+  input {
+    border-radius:0;
+    width: 100% !important;
+    background:transparent;
+  }
+  textarea {
+    border-radius:0;
+  }
+}
+.name2 {
+  margin:0 !important;
+  font-size: 14px;
+}
+.e-mail {
+  padding-right:0 !important;
+}
+.form-group-text {
+  color:rgb(14,16,28);
+  padding-right:0 !important;
+  width: 100% !important;
+  display: block !important;
+  clear: both !important;
+ label {
+    font-family: $font-main;
+    color: rgb(14,16,28);
+    font-size: 1em;
+  }
+  input {
+    border-radius:0;
+
+  }
+  textarea {
+    border-radius:0;
+    color: rgb(14,16,28);
+
+  }
+}
+
+.form-control {
+  padding:10px 12px !important; 
+  width: 100% !important;
+  height: 45px;
+   border:1px solid rgb(14,16,28);
+     background:transparent;
+     color:rgb(14,16,28);
+     &:focus {
+      border-color: rgb(14,16,28);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+}
+
+  .btn{
+    border-radius:0;
+    width: 150px;
+    height: 50px;
+    border:rgb(14,16,28);
+    background:rgb(14,16,28) !important;
+    margin-left:auto !important;
+    margin-top: 30px !important;
+    margin-right: auto !important;
+    font-family: $font-main;
+    font-size: 1.5em;
+     color: #fff;
+
+    }
+.contact-info {
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: $font5;
+    line-height: 40px;
+  }
+}
+.map-wrap {
+    padding:0;
+  }
+#googlemaps { 
+  height: 350px;
+  width: 100%; 
+}

@@ -1,0 +1,50 @@
+
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+.contact-wrap-bg {
+  background:#211E2F;
+  overflow: hidden;
+  text-align:center;
+    p {
+    color: #fff;
+    font-size: 1.4em;
+    padding:20px 0;
+  }
+}
+.center-bg {
+  max-width: 350px;
+  margin:0 auto;
+    padding:40px 0;
+}
+.all-services {
+  font-weight: 300;
+  font-family: $font-main;
+}
+img.footer-logo {
+  max-width: 304px;
+  width:100%;
+}
+.social {
+  display: table;
+  width:200px;
+  text-align:center;
+  margin:20px auto;
+  a {
+    display: table-cell;
+  }
+  img {
+    max-width:20px;
+  }
+}
+.copyright {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  &:hover {
+    color: #fff;
+
+  }
+}

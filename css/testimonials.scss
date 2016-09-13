@@ -1,0 +1,50 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.testimonials-wrap {
+  background:url(../img/testimonials-bg.png) no-repeat center right;
+  padding:50px 0 100px 0;
+
+  h2 {
+     font-size: 5em;
+    padding-bottom:40px;
+    color: #000;
+    text-align:left;
+    font-family:$font3;
+    @include breakpoint(medium_screen1){
+      font-size: 2.7em;
+     }
+  }
+  p {
+    font-style: italic;
+    text-align: justify;
+    padding:15px 0;
+    font-family:$font2;
+    font-size: 1.4em;
+
+  }
+  img {
+    max-width: 70px;
+    display:block;
+    width:100%;
+    margin:0 auto;
+  }
+}
+$fsz:1.7em;
+%client-info{
+	display:block;
+	font-size:$fsz;
+	text-align:center;
+}
+.name {
+  @extend %client-info;
+  margin: 20px auto 5px auto;
+  font-family:$font5;
+}
+.ocupation {
+  @extend %client-info;
+  font-size: $fsz - .6em;
+  margin: 0;
+  font-family:$font1;
+  font-style: normal;
+}
